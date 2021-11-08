@@ -8,7 +8,7 @@ function User() {
     </div>
     <div className="info">
       <p>Karlo</p>
-      <a href="#">Logout</a>
+      <a href="www.google.com">Logout</a>
     </div>
   </div>
 }
