@@ -35,7 +35,7 @@ function AddNewTodo() {
     </div>
       <DatePicker 
       value={date} 
-      onChange={()=>setDate(date)} 
+      onChange={(e) => setDate(e)} 
       />
   </div>
   <div className="pickTime">
@@ -45,7 +45,7 @@ function AddNewTodo() {
     </div>
       <TimePicker 
       value={time} 
-      onChange={()=>setTime(time)} 
+      onChange={(e) => setTime(e)} 
       />
   </div>
   <div className="pickProject">
