@@ -111,6 +111,7 @@ transition: all 400ms ease;
 /*AddNewTodo*/
 .AddNewTodo form {
 /* trebamo odrediti granicu za bottom padding, jer ce inace button prekriti dio projekta ako ih ima dosta*/
+/*uzet cemo height buttona(50px) + 1rem kao i ostali padding za formu*/
 padding: 1rem 1rem calc(1rem + 50px) 1rem;
 width: 500px;
 background: white;
@@ -200,4 +201,46 @@ width: 100%;
   border: none;
   border-radius: 0 0 5px 5px;
   cursor: pointer;
+  }
+
+  /*Calendar*/
+  .Calendar {
+    padding: 1rem;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .Calendar .header {
+    display: flex;
+    align-items: center;
+  }
+  .Calendar .header .title {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .Calendar .header .title p {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .Calendar .header .buttons span {
+    border-radius: 50%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Calendar .header .buttons span:hover {
+    background-color: #ebebeb;
+    transition: all 400ms ease-in-out;
+  }
+  .Calendar .items {
+    padding: 0.5rem;
+  }
+  .Calendar .items .item {
+    padding: 0.25rem;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
   }
