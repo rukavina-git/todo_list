@@ -203,26 +203,30 @@ width: 100%;
   cursor: pointer;
   }
 
-  /*Calendar*/
-  .Calendar {
+  /*Calendar + projects*/
+  .Calendar,
+  .projects {
     padding: 1rem;
     border-bottom: 1px solid #ebebeb;
   }
-  .Calendar .header {
+  .Calendar .header,
+  .projects .header {
     display: flex;
     align-items: center;
   }
-  .Calendar .header .title {
+  .Calendar .header .title,
+  .projects .header .title {
     display: flex;
     align-items: center;
     flex: 1;
   }
-  .Calendar .header .title p {
+  .Calendar .header .title p,
+  .projects .header .title p{
     margin-left: 5px;
     font-size: 1.2rem;
     font-weight: bold;
   }
-  .Calendar .header .buttons span {
+  .Calendar .header .buttons span{
     border-radius: 50%;
     cursor: pointer;
     width: 25px;
@@ -231,16 +235,33 @@ width: 100%;
     align-items: center;
     justify-content: center;
   }
-  .Calendar .header .buttons span:hover {
+
+  .projects .header .buttons span{
+    border-radius: 50%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.3rem;
+  }
+  .Calendar .header .buttons span:hover,
+  .projects .header .buttons span:hover {
     background-color: #ebebeb;
     transition: all 400ms ease-in-out;
   }
-  .Calendar .items {
+  .Calendar .items,
+  .projects .items {
     padding: 0.5rem;
   }
-  .Calendar .items .item {
+  .Calendar .items .item,
+  .projects .items .item{
     padding: 0.25rem;
     margin: 5px;
     font-size: 1rem;
     cursor: pointer;
   }
+
+  /*AddNewProject*/
